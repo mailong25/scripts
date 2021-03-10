@@ -25,7 +25,7 @@ def split_audio(path):
         return
     
     if audio_len >= 300:
-        audio_len = 270
+        audio_len = audio_len - 30
         audio = audio[20000:-10000]
     
     cur_idx = 0
